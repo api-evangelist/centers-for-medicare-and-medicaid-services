@@ -4,9 +4,9 @@ url: >-
 name: Centers for Medicare and Medicaid Services
 tags:
   - Federal Government
-  - Medicare
-  - Medicaid
   - Healthcare
+  - Medicaid
+  - Medicare
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
