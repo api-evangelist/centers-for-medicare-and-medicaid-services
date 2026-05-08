@@ -60,6 +60,8 @@ apis:
         type: Sandbox
       - url: https://bluebutton.cms.gov/resources/
         type: Resources
+      - type: OpenAPI
+        url: openapi/centers-for-medicare-and-medicaid-services-cms-blue-button-2-openapi.yml
     description: >-
       Blue Button 2.0 is a standards-based HL7 FHIR R4 API that delivers
       Medicare Part A, B, and D claims data for over 60 million beneficiaries
