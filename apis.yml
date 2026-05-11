@@ -278,6 +278,10 @@ common:
     url: https://github.com/CMSgov
   - type: Privacy Policy
     url: https://www.cms.gov/privacy
+  - type: Integrations
+    url: https://www.cms.gov/marketplace/in-person-assisters/information-partners
+integrations:
+  - name: Employer initiatives
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
