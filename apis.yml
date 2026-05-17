@@ -276,7 +276,7 @@ common:
     url: https://qpp.cms.gov/
   - type: GitHubOrganization
     url: https://github.com/CMSgov
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.cms.gov/privacy
   - type: Integrations
     url: https://www.cms.gov/marketplace/in-person-assisters/information-partners
