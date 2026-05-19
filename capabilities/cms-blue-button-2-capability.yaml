@@ -1,0 +1,70 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: CMS Blue Button 2.0 API — Capability
+  description: 'CMS Blue Button 2.0 API — Capability. 1 operations. Lead operation: Get Capability Statement. Self-contained
+    Naftiko capability covering one Centers For Medicare And Medicaid Services business surface.'
+  tags:
+  - Centers For Medicare And Medicaid Services
+  - Capability
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    CENTERS_FOR_MEDICARE_AND_MEDICAID_SERVICES_API_KEY: CENTERS_FOR_MEDICARE_AND_MEDICAID_SERVICES_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: cms-blue-button-2-capability
+    baseUri: https://api.bluebutton.cms.gov/v2/fhir
+    description: CMS Blue Button 2.0 API — Capability business capability. Self-contained, no shared references.
+    resources:
+    - name: metadata
+      path: /metadata
+      operations:
+      - name: getcapabilitystatement
+        method: GET
+        description: Get Capability Statement
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: bearer
+      token: '{{env.CENTERS_FOR_MEDICARE_AND_MEDICAID_SERVICES_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: cms-blue-button-2-capability-rest
+    port: 8080
+    description: REST adapter for CMS Blue Button 2.0 API — Capability. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/metadata
+      name: metadata
+      description: REST surface for metadata.
+      operations:
+      - method: GET
+        name: getcapabilitystatement
+        description: Get Capability Statement
+        call: cms-blue-button-2-capability.getcapabilitystatement
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: cms-blue-button-2-capability-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for CMS Blue Button 2.0 API — Capability. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: get-capability-statement
+      description: Get Capability Statement
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: cms-blue-button-2-capability.getcapabilitystatement
+      outputParameters:
+      - type: object
+        mapping: $.
