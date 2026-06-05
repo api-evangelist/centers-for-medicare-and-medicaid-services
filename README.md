@@ -1,7 +1,8 @@
 # Centers for Medicare and Medicaid Services (centers-for-medicare-and-medicaid-services)
+
 The Centers for Medicare and Medicaid Services (CMS) is the federal agency that provides health coverage to more than 160 million Americans through Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the Health Insurance Marketplace. CMS operates one of the largest public API programs in the U.S. government, including the FHIR-based Blue Button 2.0, Beneficiary Claims Data API (BCDA), and Data at the Point of Care (DPC); the data.cms.gov Socrata Open Data API covering Medicare claims, provider, and enrollment datasets; the Medicare Provider Data Catalog (Hospital Compare, Nursing Home Compare); the Healthcare.gov Marketplace API; NPPES and NPI Registry APIs; the QPP Measures API; and Medicaid Transformed Medicaid Statistical Information System (T-MSIS) resources.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/centers-for-medicare-and-medicaid-services/refs/heads/main/apis.yml)
+**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/centers-for-medicare-and-medicaid-services/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/centers-for-medicare-and-medicaid-services/refs/heads/main/apis.yml)
 
 ## Scope
 
@@ -11,147 +12,259 @@ The Centers for Medicare and Medicaid Services (CMS) is the federal agency that 
 
 ## Tags
 
-- Federal Government, Healthcare, Medicare, Medicaid, CMS, FHIR, Blue Button, BCDA, DPC, Claims, Open Data, Socrata, Marketplace, Provider Data, Interoperability
+- BCDA
+- Blue Button
+- CMS
+- Claims
+- DPC
+- FHIR
+- Federal Government
+- Healthcare
+- Interoperability
+- Marketplace
+- Medicaid
+- Medicare
+- Open Data
+- Provider Data
+- Socrata
 
 ## Timestamps
 
 - **Created:** 2024-12-03
-- **Modified:** 2026-04-23
+- **Modified:** 2026-05-19
 
 ## APIs
 
 ### CMS Blue Button 2.0 API
-Blue Button 2.0 is a standards-based HL7 FHIR R4 API that delivers Medicare Part A, B, and D claims data for over 60 million beneficiaries to registered third-party applications, authorized by the beneficiary through OAuth 2.0.
 
-**Human URL:** [https://bluebutton.cms.gov/](https://bluebutton.cms.gov/)
+Blue Button 2.0 is a standards-based HL7 FHIR R4 API that delivers Medicare Part A, B, and D claims data for over 60 million beneficiaries to registered third-party applications, authorized by the beneficiary through OAuth 2.0. It anchors CMS's Patient Access API program under the 21st Century Cures Act.
+
+- **Human URL:** [https://bluebutton.cms.gov/](https://bluebutton.cms.gov/)
+- **Base URL:** `https://api.bluebutton.cms.gov/v2/fhir/`
 
 #### Tags
-- FHIR, OAuth 2.0, Medicare, Claims, Patient Access
+
+- Blue Button
+- Claims
+- FHIR
+- Medicare
+- OAuth 2.0
+- Patient Access
 
 #### Properties
+
 - [Website](https://bluebutton.cms.gov/)
 - [Developer](https://bluebutton.cms.gov/developers/)
 - [Documentation](https://bluebutton.cms.gov/api-documentation/)
 - [Sandbox](https://sandbox.bluebutton.cms.gov/)
+- [Resources](https://bluebutton.cms.gov/resources/)
+- [OpenAPI](openapi/centers-for-medicare-and-medicaid-services-cms-blue-button-2-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CMS Beneficiary Claims Data API (BCDA)
-A Bulk FHIR API that delivers Medicare Part A, B, and D claims data to Medicare Shared Savings Program ACOs, ACO REACH participants, and other Alternative Payment Model participants.
 
-**Human URL:** [https://bcda.cms.gov/](https://bcda.cms.gov/)
+The Beneficiary Claims Data API (BCDA) is a Bulk FHIR API that delivers Medicare Part A, B, and D claims data to Medicare Shared Savings Program ACOs, ACO REACH participants, and other Alternative Payment Model participants for their attributed and assignable beneficiaries.
+
+- **Human URL:** [https://bcda.cms.gov/](https://bcda.cms.gov/)
+- **Base URL:** `https://api.bcda.cms.gov/api/v2/`
 
 #### Tags
-- Bulk FHIR, ACO, Claims, Shared Savings, Medicare
+
+- ACO
+- BCDA
+- Bulk FHIR
+- Claims
+- Medicare
+- Shared Savings
 
 #### Properties
+
 - [Website](https://bcda.cms.gov/)
 - [Documentation](https://bcda.cms.gov/guide.html)
 - [Sandbox](https://sandbox.bcda.cms.gov/)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CMS Data at the Point of Care (DPC) API
-A FHIR Bulk Data API that delivers Original Medicare claims data to fee-for-service providers for the patients currently under their care.
 
-**Human URL:** [https://dpc.cms.gov/](https://dpc.cms.gov/)
+Data at the Point of Care is a FHIR Bulk Data API that delivers Original Medicare claims data to fee-for-service providers for the patients currently under their care, enabling clinicians to see a patient's full Medicare history at the point of care.
+
+- **Human URL:** [https://dpc.cms.gov/](https://dpc.cms.gov/)
+- **Base URL:** `https://api.dpc.cms.gov/api/v1/`
 
 #### Tags
-- Bulk FHIR, FFS, Point of Care, Claims, Providers
+
+- Bulk FHIR
+- Claims
+- FFS
+- Point of Care
+- Providers
 
 #### Properties
+
 - [Website](https://dpc.cms.gov/)
 - [Documentation](https://dpc.cms.gov/docs)
 - [Sandbox](https://sandbox.dpc.cms.gov/)
+- [F A Q](https://dpc.cms.gov/faq)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CMS Socrata Open Data API (data.cms.gov)
-data.cms.gov hosts hundreds of CMS datasets including Medicare Fee-for-Service utilization, Provider of Services files, Medicare Part B/D Prescriber summaries, Marketplace data, and COVID-19 nursing home data.
 
-**Human URL:** [https://data.cms.gov/](https://data.cms.gov/)
+data.cms.gov hosts hundreds of CMS datasets including Medicare Fee-for-Service utilization and payment data, Provider of Services files, Medicare Part B/D Prescriber summaries, Marketplace open enrollment data, and COVID-19 nursing home data, available via the data.cms.gov Data API (JSON) and the CMS Provider Data Catalog Socrata-compatible endpoints.
+
+- **Human URL:** [https://data.cms.gov/](https://data.cms.gov/)
+- **Base URL:** `https://data.cms.gov/data.json`
 
 #### Tags
-- Socrata, SODA, Open Data, Datasets, Medicare, Provider Data
+
+- Datasets
+- Medicare
+- Open Data
+- Provider Data
+- SODA
+- Socrata
 
 #### Properties
+
 - [Website](https://data.cms.gov/)
 - [Documentation](https://data.cms.gov/provider-data/docs)
 - [Developer](https://developer.cms.gov/data-cms/)
-- [DataAPI](https://data.cms.gov/data-api)
+- [Data A P I](https://data.cms.gov/data-api)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CMS Provider Data Catalog API (Care Compare)
-Exposes the Medicare.gov Care Compare datasets including Hospital, Nursing Home, Home Health, Hospice, Physician, LTCH, IRF, and Dialysis Facility quality measures.
 
-**Human URL:** [https://data.cms.gov/provider-data/](https://data.cms.gov/provider-data/)
+The Provider Data Catalog API (formerly Hospital Compare) exposes the Medicare.gov Care Compare datasets including Hospital, Nursing Home, Home Health, Hospice, Physician, Long-Term Care Hospital, Inpatient Rehab, and Dialysis Facility quality measures as DCAT-based datasets with Datastore query endpoints.
+
+- **Human URL:** [https://data.cms.gov/provider-data/](https://data.cms.gov/provider-data/)
+- **Base URL:** `https://data.cms.gov/provider-data/api/1/`
 
 #### Tags
-- Provider Data, Care Compare, Hospital Compare, Nursing Home Compare, Quality
+
+- Care Compare
+- Dialysis Compare
+- Hospital Compare
+- Nursing Home Compare
+- Provider Data
+- Quality
 
 #### Properties
+
 - [Website](https://data.cms.gov/provider-data/)
 - [Documentation](https://data.cms.gov/provider-data/docs)
+- [Metastore](https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### NPPES NPI Registry API
-Free public access to look up active National Provider Identifier records for individual and organizational healthcare providers.
 
-**Human URL:** [https://npiregistry.cms.hhs.gov/](https://npiregistry.cms.hhs.gov/)
+The NPPES NPI Registry API provides free public access to look up active National Provider Identifier records for individual and organizational healthcare providers, supporting FHIR-compatible JSON responses used widely in credentialing, directory, and claims validation workflows.
+
+- **Human URL:** [https://npiregistry.cms.hhs.gov/](https://npiregistry.cms.hhs.gov/)
+- **Base URL:** `https://npiregistry.cms.hhs.gov/api/`
 
 #### Tags
-- NPI, NPPES, Provider Registry, Credentialing, Provider Identifier
+
+- Credentialing
+- NPI
+- NPPES
+- Provider Identifier
+- Provider Registry
 
 #### Properties
+
 - [Website](https://npiregistry.cms.hhs.gov/)
 - [Documentation](https://npiregistry.cms.hhs.gov/api-page)
+- [Help](https://npiregistry.cms.hhs.gov/help-api/)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Healthcare.gov Marketplace API
-Exposes Qualified Health Plan details, plan attributes, provider networks, and formularies for the Federally-Facilitated Marketplace states.
 
-**Human URL:** [https://www.healthcare.gov/developers/](https://www.healthcare.gov/developers/)
+The Healthcare.gov Marketplace API and accompanying Open Data Plan Finder exposes Qualified Health Plan (QHP) details, plan attributes, provider networks, and formularies for the Federally-Facilitated Marketplace states, enabling third-party plan comparison and enrollment experiences.
+
+- **Human URL:** [https://www.healthcare.gov/developers/](https://www.healthcare.gov/developers/)
+- **Base URL:** `https://marketplace.api.healthcare.gov/api/v1/`
 
 #### Tags
-- Marketplace, ACA, QHP, Plan Finder, Exchange
+
+- ACA
+- Exchange
+- Marketplace
+- Plan Finder
+- QHP
 
 #### Properties
+
 - [Developer](https://www.healthcare.gov/developers/)
 - [Examples](https://github.com/CMSgov/marketplace-api-examples)
-- [OpenData](https://data.healthcare.gov/)
+- [Open Data](https://data.healthcare.gov/)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### CMS Quality Payment Program (QPP) Measures API
-Publishes machine-readable specifications of MIPS quality, promoting interoperability, improvement activities, and cost measures for each performance year.
 
-**Human URL:** [https://qpp.cms.gov/](https://qpp.cms.gov/)
+The Quality Payment Program Measures Data repository and REST API publish machine-readable specifications of MIPS quality, promoting interoperability, improvement activities, and cost measures for each performance year, supporting vendor QPP submissions and analytics.
+
+- **Human URL:** [https://qpp.cms.gov/](https://qpp.cms.gov/)
 
 #### Tags
-- QPP, MIPS, Measures, Quality, Value-Based
+
+- MIPS
+- Measures
+- Quality
+- QPP
+- Value-Based
 
 #### Properties
+
 - [Website](https://qpp.cms.gov/)
 - [Documentation](https://cmsgov.github.io/qpp-measures-data/)
-- [SourceCode](https://github.com/CMSgov/qpp-measures-data)
+- [Source Code](https://github.com/CMSgov/qpp-measures-data)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Medicare Coverage Database (MCD) API
-Publishes National Coverage Determinations (NCDs), Local Coverage Determinations (LCDs), articles, and coding guidance used to determine Medicare coverage.
 
-**Human URL:** [https://www.cms.gov/medicare-coverage-database/](https://www.cms.gov/medicare-coverage-database/)
+The Medicare Coverage Database publishes National Coverage Determinations (NCDs), Local Coverage Determinations (LCDs), articles, and coding guidance used to determine Medicare coverage and reimbursement policies, distributed via downloadable datasets and JSON/CSV query endpoints.
+
+- **Human URL:** [https://www.cms.gov/medicare-coverage-database/](https://www.cms.gov/medicare-coverage-database/)
 
 #### Tags
-- NCD, LCD, Coverage, Policy, MAC
+
+- Coverage
+- LCD
+- MAC
+- NCD
+- Policy
 
 #### Properties
+
 - [Website](https://www.cms.gov/medicare-coverage-database/)
 - [Downloads](https://www.cms.gov/medicare-coverage-database/downloads/downloads.aspx)
+- [Postman Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/centers-for-medicare-and-medicaid-services-cms-blue-button-2.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
 - [Website](https://www.cms.gov/)
 - [Developer](https://developer.cms.gov/)
-- [OpenData](https://data.cms.gov/)
-- [ProviderData](https://data.cms.gov/provider-data/)
-- [BlueButton](https://bluebutton.cms.gov/)
-- [BCDA](https://bcda.cms.gov/)
-- [DPC](https://dpc.cms.gov/)
-- [NPPES](https://npiregistry.cms.hhs.gov/)
+- [Open Data](https://data.cms.gov/)
+- [Provider Data](https://data.cms.gov/provider-data/)
+- [Blue Button](https://bluebutton.cms.gov/)
+- [B C D A](https://bcda.cms.gov/)
+- [D P C](https://dpc.cms.gov/)
+- [N P P E S](https://npiregistry.cms.hhs.gov/)
 - [Marketplace](https://www.healthcare.gov/developers/)
-- [QPP](https://qpp.cms.gov/)
-- [GitHubOrganization](https://github.com/CMSgov)
+- [Q P P](https://qpp.cms.gov/)
+- [GitHub Organization](https://github.com/CMSgov)
+- [Privacy Policy](https://www.cms.gov/privacy)
+- [Integrations](https://www.cms.gov/marketplace/in-person-assisters/information-partners)
 
 ## Maintainers
 
 **FN:** Kin Lane
-
 **Email:** kin@apievangelist.com
