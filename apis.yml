@@ -234,6 +234,8 @@ apis:
       (LCDs), articles, and coding guidance used to determine Medicare coverage and reimbursement policies, distributed
       via downloadable datasets and JSON/CSV query endpoints.
 common:
+  - type: OAuthScopes
+    url: scopes/centers-for-medicare-and-medicaid-services-scopes.yml
   - type: Website
     url: https://www.cms.gov/
   - type: Developer
