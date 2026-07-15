@@ -234,6 +234,8 @@ apis:
       (LCDs), articles, and coding guidance used to determine Medicare coverage and reimbursement policies, distributed
       via downloadable datasets and JSON/CSV query endpoints.
 common:
+  - type: AgenticAccess
+    url: agentic-access/centers-for-medicare-and-medicaid-services-agentic-access.yml
   - type: DomainSecurity
     url: security/centers-for-medicare-and-medicaid-services-domain-security.yml
   - type: Authentication
